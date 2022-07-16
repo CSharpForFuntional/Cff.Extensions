@@ -3,8 +3,7 @@ var app = builder.Build();
 
 app.MapPost("/api/NotificationMail", async (HttpContext http) =>
 {
-    var q = from __ in unitEff
-            from req in http.ReadFromJsonAff<Dto>()
+    var q = from req in http.ReadFromJsonAff<Dto>()
             from _1 in new DtoValidator().ValidateAff(req)
             select req;
 
@@ -13,12 +12,13 @@ app.MapPost("/api/NotificationMail", async (HttpContext http) =>
 
 await app.RunAsync();
 
-internal record Dto();
+internal record Dto(string Name);
 
 internal class DtoValidator : AbstractValidator<Dto>
 {
     public DtoValidator()
     {
+        RuleFor(x => x.Name).NotEmpty();
     }
 }
 

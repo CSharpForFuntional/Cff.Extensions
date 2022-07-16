@@ -23,7 +23,10 @@ public class PreludeSpec
         var flurl = new FlurlClient(client);
 
         var ret = await flurl.Request("/api/NotificationMail")
-                             .PostJsonAsync(new { });
+                             .PostJsonAsync(new
+                             {
+                                 Name = "Hello"
+                             });
     }
 
    
