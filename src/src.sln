@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cff.Extensions.AspNetCore.T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cff.Extensions.AspNetCore.TestServer", "Cff.Extensions.AspNetCore.TestServer\Cff.Extensions.AspNetCore.TestServer.csproj", "{C40CA1DD-3CDD-43D4-8059-A8E18D23D494}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cff.Extensions.ProtoActor.Tests", "Cff.Extensions.ProtoActor.Tests\Cff.Extensions.ProtoActor.Tests.csproj", "{6F13ABFD-74E3-4183-9C0D-756FCEFD8450}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{C40CA1DD-3CDD-43D4-8059-A8E18D23D494}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C40CA1DD-3CDD-43D4-8059-A8E18D23D494}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C40CA1DD-3CDD-43D4-8059-A8E18D23D494}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F13ABFD-74E3-4183-9C0D-756FCEFD8450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F13ABFD-74E3-4183-9C0D-756FCEFD8450}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F13ABFD-74E3-4183-9C0D-756FCEFD8450}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F13ABFD-74E3-4183-9C0D-756FCEFD8450}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
