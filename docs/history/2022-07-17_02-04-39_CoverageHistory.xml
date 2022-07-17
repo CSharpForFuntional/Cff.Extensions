@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<coverage version="1.0" date="2022-07-17_02-04-39" tag="4_2683923580">
+  <assembly name="Cff.Extensions.AspNetCore">
+    <class name="Cff.Extensions.HttpContextExt" coveredlines="4" coverablelines="5" totallines="16" coveredbranches="0" totalbranches="0" coveredcodeelements="1" totalcodeelements="2" />
+    <class name="Cff.Extensions.LoggerExtension" coveredlines="0" coverablelines="4" totallines="14" coveredbranches="0" totalbranches="0" coveredcodeelements="0" totalcodeelements="1" />
+    <class name="Cff.Extensions.Prelude" coveredlines="0" coverablelines="10" totallines="19" coveredbranches="0" totalbranches="2" coveredcodeelements="0" totalcodeelements="1" />
+  </assembly>
+  <assembly name="Cff.Extensions.AspNetCore.TestServer">
+    <class name="Dto" coveredlines="1" coverablelines="1" totallines="25" coveredbranches="0" totalbranches="0" coveredcodeelements="1" totalcodeelements="1" />
+    <class name="DtoValidator" coveredlines="4" coverablelines="4" totallines="25" coveredbranches="0" totalbranches="0" coveredcodeelements="1" totalcodeelements="1" />
+    <class name="Program" coveredlines="11" coverablelines="11" totallines="25" coveredbranches="0" totalbranches="0" coveredcodeelements="1" totalcodeelements="1" />
+  </assembly>
+  <assembly name="Cff.Extensions.FluentValidation">
+    <class name="Cff.Extensions.ValidatorExtensions" coveredlines="1" coverablelines="1" totallines="7" coveredbranches="0" totalbranches="0" coveredcodeelements="1" totalcodeelements="1" />
+  </assembly>
+  <assembly name="Cff.Extensions.ProtoActor">
+    <class name="Cff.Extensions.IActorAff" coveredlines="0" coverablelines="1" totallines="10" coveredbranches="0" totalbranches="0" coveredcodeelements="0" totalcodeelements="1" />
+    <class name="Cff.Extensions.Prelude" coveredlines="1" coverablelines="1" totallines="9" coveredbranches="0" totalbranches="0" coveredcodeelements="1" totalcodeelements="1" />
+    <class name="Cff.Extensions.ProtoActorExtensions" coveredlines="11" coverablelines="11" totallines="23" coveredbranches="4" totalbranches="4" coveredcodeelements="3" totalcodeelements="3" />
+  </assembly>
+</coverage>
