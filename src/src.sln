@@ -8,17 +8,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\.editorconfig = ..\.editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cff.Extensions.AspNetCore", "Cff.Extensions.AspNetCore\Cff.Extensions.AspNetCore.csproj", "{2A35B6A8-C3C7-41F6-A9C6-9973547E68C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cff.Extensions.AspNetCore", "Cff.Extensions.AspNetCore\Cff.Extensions.AspNetCore.csproj", "{2A35B6A8-C3C7-41F6-A9C6-9973547E68C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cff.Extensions.FluentValidation", "Cff.Extensions.FluentValidation\Cff.Extensions.FluentValidation.csproj", "{DE40D4A7-039F-4A51-B40B-4F35D851770E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cff.Extensions.FluentValidation", "Cff.Extensions.FluentValidation\Cff.Extensions.FluentValidation.csproj", "{DE40D4A7-039F-4A51-B40B-4F35D851770E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cff.Extensions.ProtoActor", "Cff.Extensions.ProtoActor\Cff.Extensions.ProtoActor.csproj", "{973B0DFC-C56D-4E4E-8855-C52C8D0007F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cff.Extensions.AspNetCore.Tests", "Cff.Extensions.AspNetCore.Tests\Cff.Extensions.AspNetCore.Tests.csproj", "{299CF3B8-054D-4E54-94CB-C57FCB735CD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cff.Extensions.AspNetCore.Tests", "Cff.Extensions.AspNetCore.Tests\Cff.Extensions.AspNetCore.Tests.csproj", "{299CF3B8-054D-4E54-94CB-C57FCB735CD1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cff.Extensions.AspNetCore.TestServer", "Cff.Extensions.AspNetCore.TestServer\Cff.Extensions.AspNetCore.TestServer.csproj", "{C40CA1DD-3CDD-43D4-8059-A8E18D23D494}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cff.Extensions.ProtoActor.Tests", "Cff.Extensions.ProtoActor.Tests\Cff.Extensions.ProtoActor.Tests.csproj", "{6F13ABFD-74E3-4183-9C0D-756FCEFD8450}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cff.Extensions.AspNetCore.TestServer", "Cff.Extensions.AspNetCore.TestServer\Cff.Extensions.AspNetCore.TestServer.csproj", "{C40CA1DD-3CDD-43D4-8059-A8E18D23D494}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,10 +30,6 @@ Global
 		{DE40D4A7-039F-4A51-B40B-4F35D851770E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE40D4A7-039F-4A51-B40B-4F35D851770E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE40D4A7-039F-4A51-B40B-4F35D851770E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{973B0DFC-C56D-4E4E-8855-C52C8D0007F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{973B0DFC-C56D-4E4E-8855-C52C8D0007F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{973B0DFC-C56D-4E4E-8855-C52C8D0007F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{973B0DFC-C56D-4E4E-8855-C52C8D0007F8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{299CF3B8-054D-4E54-94CB-C57FCB735CD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{299CF3B8-054D-4E54-94CB-C57FCB735CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{299CF3B8-054D-4E54-94CB-C57FCB735CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -46,10 +38,6 @@ Global
 		{C40CA1DD-3CDD-43D4-8059-A8E18D23D494}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C40CA1DD-3CDD-43D4-8059-A8E18D23D494}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C40CA1DD-3CDD-43D4-8059-A8E18D23D494}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6F13ABFD-74E3-4183-9C0D-756FCEFD8450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6F13ABFD-74E3-4183-9C0D-756FCEFD8450}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6F13ABFD-74E3-4183-9C0D-756FCEFD8450}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6F13ABFD-74E3-4183-9C0D-756FCEFD8450}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
