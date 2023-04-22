@@ -1,16 +1,31 @@
-using Cff.Extensions.AspNetCore.TestServer.Controller;
 using Cff.Extensions.AspNetCore.TestServer.Dto;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<IValidator<SendMailDto>, SendMailDtoValidator>();
+builder.Host.UseRemoveValidator();
+
 var app = builder.Build();
 
-app.MapPost("/api/NotificationMail", Controller.NewMethod).Accepts<PersonDto>("application/json");
+if (app.Environment.IsDevelopment())
+{
+    _ = app.UseSwagger();
+    _ = app.UseSwaggerUI(option =>
+    {
+
+    });
+}
+
+app.MapPost("/mail", SendMail)
+   .Accepts<SendMailDto>("application/json")
+   .WithOpenApi();
 
 await app.RunAsync();
-
-
 
 
 public partial class Program { }
