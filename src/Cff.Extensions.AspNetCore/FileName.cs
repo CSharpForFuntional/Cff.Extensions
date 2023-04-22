@@ -6,7 +6,7 @@ namespace Cff.Extensions;
 
 public static class HostExtension
 {
-    public static IHostBuilder UseRemoveValidator(this IHostBuilder hostBuilder) =>
+    public static IHostBuilder UseClearModelValidatorMVC(this IHostBuilder hostBuilder) =>
         hostBuilder.ConfigureServices((context, services) =>
         {
             _ = services.AddControllers(options =>
