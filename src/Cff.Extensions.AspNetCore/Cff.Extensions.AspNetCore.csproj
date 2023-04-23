@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Dapper" Version="2.0.123" />
     <ProjectReference Include="..\Cff.Extensions.FluentValidation\Cff.Extensions.FluentValidation.csproj" />
   </ItemGroup>
 

@@ -15,10 +15,7 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     _ = app.UseSwagger();
-    _ = app.UseSwaggerUI(option =>
-    {
-
-    });
+    _ = app.UseSwaggerUI();
 }
 
 app.MapPost("/mail", SendMail)

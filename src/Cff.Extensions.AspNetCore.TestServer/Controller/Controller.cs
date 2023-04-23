@@ -27,7 +27,7 @@ public static class Prelude
         using var cts = CancellationTokenSource.CreateLinkedTokenSource(http.RequestAborted);
         var rt = new Runtime(http, validator, cts);
 
-        await q.ExecuteAff().Run(rt);
+        _ = await q.ExecuteAff().Run(rt);
     }
 }
 
