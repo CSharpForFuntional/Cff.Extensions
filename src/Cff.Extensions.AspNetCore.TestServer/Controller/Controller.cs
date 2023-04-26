@@ -1,9 +1,7 @@
-using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 using System.Threading.Tasks;
 using Cff.Extensions.AspNetCore.TestServer.Dto;
 using Cff.Extensions.Effects;
-using LanguageExt.Effects.Traits;
 using Microsoft.AspNetCore.Http;
 
 using static Cff.Extensions.Effects.IHasHttp<Runtime>;
@@ -31,7 +29,9 @@ public static class Prelude
     }
 }
 
-readonly file record struct Runtime
+public interface IRuntime<RT> : IHasHttp<RT>, IHasValidator<RT> where RT : struct, IRuntime<RT> { }
+
+readonly file record struct Runtime 
 (
     HttpContext HttpContext,
     IValidator Validator,

@@ -20,7 +20,7 @@ public class DapperSpec
         using var cts = new CancellationTokenSource();
         await using var conn = FakeDbConnection();
         await conn.OpenAsync(cts.Token);
-        await using var tran = await conn.BeginTransactionAsync();
+        await using var tran = await conn.BeginTransactionAsync(cts.Token);
         var rt = new Runtime(conn, tran, cts);
 
         var ret = await q.Run(rt);

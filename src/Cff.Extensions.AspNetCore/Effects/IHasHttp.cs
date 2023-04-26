@@ -43,17 +43,11 @@ public interface IHasHttp<RT> : IHas<RT, HttpContext> where RT : struct, IHasHtt
         from http in Eff
         from res in aff.Map(x =>
         {
-            var expando = new ExpandoObject() as IDictionary<string, object>;
+            var expando = JsonSerializer.SerializeToNode(x, JsonSerializerOptions)!;
 
-            foreach (var propertyInfo in x.GetType().GetProperties())
-            {
-                var currentValue = propertyInfo.GetValue(x);
-                expando.Add(propertyInfo.Name, currentValue);
-            }
+            expando.Root["traceId"] = Activity.Current?.Id ?? http.TraceIdentifier;
 
-            expando.Add("traceId", Activity.Current?.Id ?? http.TraceIdentifier);
-
-            return Results.Ok(expando);
+            return Results.Text(expando.ToJsonString(JsonSerializerOptions), "text/json", System.Text.Encoding.UTF8);
         })
         | @catch(e => true, ex => Eff(() => ex switch
         {
